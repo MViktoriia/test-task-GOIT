@@ -1,5 +1,9 @@
 export { default as bgCard } from './bg-card-min.svg';
 export { default as logo } from './Logo-min.svg';
-export { default as avatar } from './patron-min.JPG';
+export { default as avatar1 } from './patron-min.JPG';
+export { default as avatar2 } from './homer-min.JPG';
+export { default as avatar3 } from './king-min.JPG';
+export { default as avatar4 } from './kozak-min.JPG';
+export { default as avatar5 } from './jolie-min.JPG';
 export { default as rectangle } from './Rectangle-min.svg';
 export { default as ellipse } from './Ellipse-min.svg';
