@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "/test-task-goit/static/media/kozak-min.8b33e18d8e888b700245.JPG"
+  },
+  {
+    "id": "2",
+    "user": "Angelina Jolie",
+    "tweets": 888,
+    "followers": 100500,
+    "avatar": "/test-task-goit/static/media/jolie-min.10241ec531533056c761.JPG"
+  },
+  {
+    "id": "3",
+    "user": "Stephen King",
+    "tweets": 999,
+    "followers": 100500,
+    "avatar": "/test-task-goit/static/media/king-min.482b697f1ee29b3f0c47.JPG"
+  },
+  {
+    "id": "4",
+    "user": "Patron",
+    "tweets": 444,
+    "followers": 100500,
+    "avatar": "/test-task-goit/static/media/patron-min.852e181ebf8716c42e15.JPG"
+  },
+  {
+    "id": "5",
+    "user": "Hansel",
+    "tweets": 555,
+    "followers": 100500,
+    "avatar": "data:image/png;base64,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"
+  },
+  {
+    "id": "6",
+    "user": "Homer Simpson",
+    "tweets": 456,
+    "followers": 100500,
+    "avatar": "/test-task-goit/static/media/homer-min.b7a1bdbc7ac9b69bc25c.JPG"
+  }
+]

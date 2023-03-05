@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { avatar, logo } from '../../images';
+// import React, { useEffect, useState } from 'react';
+import { logo } from '../../images';
 import {
   AvatarWrapper,
   CardBottomWrapper,
@@ -8,21 +8,11 @@ import {
   StyledButton,
   StyledCard,
   StyledText,
-} from './ProfileCard.styled';
+} from './CardItem.styled';
 
-function ProfileCard() {
+function CardItem({ id, tweets, followers, avatar, onClick, isFollowed }) {
   const numberWithCommas = number => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  };
-
-  const [isFollowed, setIsFollowed] = useState(false);
-  const [followers, setFollowers] = useState(100500);
-
-  const handleClick = () => {
-    setIsFollowed(prevState => !prevState);
-    isFollowed
-      ? setFollowers(prevState => prevState - 1)
-      : setFollowers(prevState => prevState + 1);
   };
 
   return (
@@ -32,15 +22,20 @@ function ProfileCard() {
           <img src={logo} alt="GOIT logo" />
         </LogoWrapper>
         <AvatarWrapper>
-          <img src={avatar} alt="user profile avatar" height="62px" />
+          <img
+            src={avatar}
+            alt="user profile avatar"
+            height="62px"
+            width="62px"
+          />
         </AvatarWrapper>
         <CardBottomWrapper>
-          <StyledText> 777 TWEETS</StyledText>
+          <StyledText> {tweets} TWEETS</StyledText>
           <StyledText mb="26px">
             {numberWithCommas(followers)} FOLLOWERS
           </StyledText>
           <StyledButton
-            onClick={handleClick}
+            onClick={() => onClick(id)}
             bgColor={isFollowed ? '#5CD3A8' : '#ebd8ff'}
           >
             {isFollowed ? 'Following' : 'Follow'}
@@ -51,4 +46,4 @@ function ProfileCard() {
   );
 }
 
-export default ProfileCard;
+export default CardItem;

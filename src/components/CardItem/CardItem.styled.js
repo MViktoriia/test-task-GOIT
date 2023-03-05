@@ -43,6 +43,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const AvatarWrapper = styled.div`
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
