@@ -1,18 +1,22 @@
 {
   "files": {
     "main.css": "/test-task-goit/static/css/main.b5320759.css",
-    "main.js": "/test-task-goit/static/js/main.396108d6.js",
+    "main.js": "/test-task-goit/static/js/main.63998be8.js",
     "static/media/bg-card-min.svg": "/test-task-goit/static/media/bg-card-min.dd7094b01bbf0f6eb73eb0a216fc6fb9.svg",
     "static/media/patron-min.JPG": "/test-task-goit/static/media/patron-min.852e181ebf8716c42e15.JPG",
+    "static/media/homer-min.JPG": "/test-task-goit/static/media/homer-min.b7a1bdbc7ac9b69bc25c.JPG",
+    "static/media/jolie-min.JPG": "/test-task-goit/static/media/jolie-min.10241ec531533056c761.JPG",
+    "static/media/king-min.JPG": "/test-task-goit/static/media/king-min.482b697f1ee29b3f0c47.JPG",
+    "static/media/kozak-min.JPG": "/test-task-goit/static/media/kozak-min.8b33e18d8e888b700245.JPG",
     "static/media/Logo-min.svg": "/test-task-goit/static/media/Logo-min.ed8d2d6f7ea349921680afb489ab80b8.svg",
     "static/media/Ellipse-min.svg": "/test-task-goit/static/media/Ellipse-min.3b72307aaecd013441079920c545c623.svg",
     "static/media/Rectangle-min.svg": "/test-task-goit/static/media/Rectangle-min.bd5fb4c785cb7ce2b0e557935622d701.svg",
     "index.html": "/test-task-goit/index.html",
     "main.b5320759.css.map": "/test-task-goit/static/css/main.b5320759.css.map",
-    "main.396108d6.js.map": "/test-task-goit/static/js/main.396108d6.js.map"
+    "main.63998be8.js.map": "/test-task-goit/static/js/main.63998be8.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.396108d6.js"
+    "static/js/main.63998be8.js"
   ]
 }
