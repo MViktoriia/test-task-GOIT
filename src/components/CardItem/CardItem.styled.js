@@ -23,7 +23,7 @@ export const CardWrapper = styled.div`
   background-image: url(${bgCard});
   background-repeat: no-repeat;
   background-position: top 8px left 16px;
-  &::after {
+  /* &::after {
     content: '';
     width: 80px;
     height: 80px;
@@ -33,7 +33,7 @@ export const CardWrapper = styled.div`
     position: absolute;
     top: 158px;
     left: 130px;
-  }
+  } */
 `;
 
 export const LogoWrapper = styled.div`
@@ -42,21 +42,39 @@ export const LogoWrapper = styled.div`
   margin-bottom: 136px;
 `;
 
-export const AvatarWrapper = styled.div`
-  /* overflow: hidden; */
+export const ImageWrapper = styled.div`
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 26px;
-  /* box-sizing: border-box; */
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   background-color: #5736a3;
   border-radius: 50%;
 
+  &::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-image: url(${ellipse});
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+`;
+
+export const AvatarWrapper = styled.div`
+  position: relative;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 26px;
   &::before {
     content: '';
     width: 150px;
@@ -104,8 +122,12 @@ export const StyledButton = styled.button`
   font-size: 18px;
   line-height: 1.22;
   text-transform: uppercase;
-  background: ${props => props.bgColor};
+  background-color: ${props => props.bgColor};
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
   border-color: transparent;
+  &:hover {
+    color: #ebd8ff;
+    background-color: #5cd3a8;
+  }
 `;

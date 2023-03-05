@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardItem } from '../CardItem';
-import Container from '../Container/Container';
+import { Container } from '../Container';
 import { StyledList } from './CardList.styled';
 
 function CardList({ users, onClick }) {

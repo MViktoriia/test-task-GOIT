@@ -4,6 +4,7 @@ import {
   AvatarWrapper,
   CardBottomWrapper,
   CardWrapper,
+  ImageWrapper,
   LogoWrapper,
   StyledButton,
   StyledCard,
@@ -22,12 +23,14 @@ function CardItem({ id, tweets, followers, avatar, onClick, isFollowed }) {
           <img src={logo} alt="GOIT logo" />
         </LogoWrapper>
         <AvatarWrapper>
-          <img
-            src={avatar}
-            alt="user profile avatar"
-            height="62px"
-            width="62px"
-          />
+          <ImageWrapper>
+            <img
+              src={avatar}
+              alt="user profile avatar"
+              height="62px"
+              width="62px"
+            />
+          </ImageWrapper>
         </AvatarWrapper>
         <CardBottomWrapper>
           <StyledText> {tweets} TWEETS</StyledText>

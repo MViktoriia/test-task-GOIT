@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import CardList from '../CardList/CardList';
+
 import users from '../../db/users.json';
+import { CardList } from '../CardList';
 
 function App() {
   const [usersInfo, setUsersInfo] = useState(
@@ -9,7 +10,6 @@ function App() {
         return { ...user, isFollowed: false };
       })
   );
-  console.log(usersInfo);
 
   useEffect(() => {
     window.localStorage.setItem('usersInfo', JSON.stringify(usersInfo));
